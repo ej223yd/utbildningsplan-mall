@@ -1,103 +1,224 @@
-%----------------------------------------------------------------------------------------
-% Packages and other document configurations
-%----------------------------------------------------------------------------------------
+\documentclass[swedish]{LnuCmThesis}
 
-\documentclass[
-    swedish, english,                % english main language
-%    english,swedish,                % swedish main language
-]{LnuCmThesis}
+\usepackage{fixfoot}
 
-\usepackage{settings}
+\watermark[UTKAST]
 
-\addbibresource{example.bib}
-%\addbibresource{example2.bib} % Additional bib file.
+\documenttype{Utbildningsplan\\\Large Fakulteten för teknik}
+\title{Webbprogrammerare}
+\subtitle{120 högskolepoäng}
+\author{Johan Leitet}
+% \supervisor{}
+% \semester{}
+\subject{Datavetenskap}
+\level{Grundnivå}
+% \credits{}
+% \examiner{}
+% \coursecode{} 
 
-%\watermark % DRAFT is the default watermark text
-%\watermark[UTKAST]
-
-%----------------------------------------------------------------------------------------
-% Thesis information
-%----------------------------------------------------------------------------------------
-
-%\title{}      % Your Title/Din titel
-%\subtitle{}   % Your Subtitle/Din undertitel
-%\author{}     % Your Name/Ditt namn
-%\supervisor{} % Your Supervisor/Din handledare
+\DeclareFixedFootnote{\fn:mainfiled}{Kurs i huvudmområdet}
 
 \begin{document}
 
-\frontmatter{} % Use roman page numbering style (i, ii, iii, iv...) for the front matters pages
-
-%----------------------------------------------------------------------------------------
-% Title page
-%----------------------------------------------------------------------------------------
-
 \maketitle
 
-%----------------------------------------------------------------------------------------
-% Abstract page
-%----------------------------------------------------------------------------------------
+\paragraph{Benämning svenska}
 
-\begin{abstract}
-    \lipsum[1]
+Webbprogrammerare, 120 högskolepoäng
 
-    \keywords{lorem\cite{loremlipsum}, ipsum, dolor, sit, amet, consectetuer, adipiscing, elit}
-\end{abstract}
+\paragraph{Benämning engelska}
 
-% Abstract in secondary language
-\begin{abstract}[swedish] %[english] 
-    Träutensilierna i ett tryckeri äro ingalunda en faktor där trevnadens ordningens och ekonomiens upprätthållande, och dock är det icke sällan som sorgliga erfarenheter göras ordningens och ekon och miens därmed upprätthållande. Träutensilierna i ett tryckeri äro ingalunda en oviktig faktor, för trevnadens ordningens och och dock är det icke sällan.
+Web Development Programme, 120 credits
 
-    \keywords{träutensilierna, tryckeri, äro, ingalunda, faktor, trevnadens, ordningens}
-\end{abstract}
+\paragraph{Nivå}
 
-%----------------------------------------------------------------------------------------
-% Acknowledgements page
-%----------------------------------------------------------------------------------------
+Grundnivå
 
-\begin{acknowledgements}
-    \lipsum[1]
-\end{acknowledgements}
+\paragraph{Fastställande av utbildningsplan}
 
-%----------------------------------------------------------------------------------------
-% Table of Contents and list of Figures/Tables/Listings pages
-%----------------------------------------------------------------------------------------
+Fastställd 2009­09­15\\
+Senast reviderad 2016­12­09 av fakultetsstyrelsen inom Fakulteten för teknik\\
+Utbildningsplanen gäller från och med vårterminen 2017
 
-\tableofcontents % Prints the main table of contents
+\paragraph{Förkunskaper}
 
-\listoffigures % Prints the list of figures
+Grundläggande behörighet samt Matematik 2a / 2b / 2c eller Matematik B\\
+(Områdesbehörighet 7/A7).
 
-\listoftables % Prints the list of tables
+\section*{Programbeskrivning}
 
-\lstlistoflistings{} % Prints the list of listings
+Utbildningen ska förbereda för yrkesroller inom områden där det krävs färdigheter i
+programmering av webbapplikationer. Utbildningen är datavetenskaplig med inriktning
+mot webbprogrammeringsområdet.
 
-%----------------------------------------------------------------------------------------
-% Thesis content - Chapters
-%----------------------------------------------------------------------------------------
+Fokus ligger på programmering och utveckling av robusta webbapplikationer med hög
+kodkvalitèt för olika plattformar och med arbetssätt och metoder som är aktuella i
+branschen.
 
-\mainmatter{} % Use numeric page numbering style (1, 2, 3, 4...) for the content pages.
+Studenten utbildas för kompetens att utveckla nya webbaserade tjänster och produkter.
+Efter utbildningen ska studenten vara väl förberedd för arbete på en IT­avdelning,
+webbyrå eller IT-­företag med ansvar för utveckling av webbapplikationer med agila
+utvecklingsmetoder. Studenten ska också se möjligheter i att starta eget företag.
 
-\include{chapters/chapter01}
-%\include{chapters/chapter02}
-%\include{chapters/chapter03}
+\section*{Mål}
 
-%----------------------------------------------------------------------------------------
-% References
-%----------------------------------------------------------------------------------------
+\subsection*{Högskoleförordningens examensordning: Examensmål}
 
-\printbibliography[heading=bibintoc]
+\subsubsection*{Kunskap och förståelse}
 
-%----------------------------------------------------------------------------------------
-% Appendices
-%----------------------------------------------------------------------------------------
+För högskoleexamen skall studenten
 
-\begin{appendices} % Switches the document from generating chapters to producing appendices.
+\begin{itemize}
+    \item visa kunskap och förståelse inom det huvudsakliga området (huvudområdet) för utbildningen, inbegripet kännedom om områdets vetenskapliga grund och kunskap om några tillämpliga metoder inom området.
+\end{itemize}
 
-    \input{appendices/appendixA}
-    %\input{appendices/AppendixB}
-    %\input{appendices/AppendixC}
+\subsubsection*{Färdighet och förmåga}
 
-\end{appendices}
+För högskoleexamen skall studenten
 
-\backmatter{}
+\begin{itemize}
+    \item visa förmåga att söka, samla och kritiskt tolka relevant information för att formulera svar på väldefinierade frågeställningar inom huvudområdet för utbildningen,
+    \item visa förmåga att redogöra för och diskutera sitt kunnande med olika grupper, och
+    \item visa sådan färdighet som fordras för att självständigt arbeta med vissa uppgifter inom det område som utbildningen avser.
+\end{itemize}
+
+\subsubsection*{Värderingsförmåga och förhållningssätt}
+
+För högskoleexamen skall studenten
+l visa kunskap om och ha förutsättningar för att hantera etiska frågeställningar
+inom huvudområdet för utbildningen.
+
+\subsection*{Programspecifika mål}
+
+I ordningsföljd som speglar utbildningens progression, studenten skall kunna
+
+\begin{itemize}
+    \item skapa säkra, tillgängliga och användarvänliga webbapplikationer för olika typer av enheter,
+    \item programmera robusta webbapplikationer med hög kodkvalitet,
+    \item redogöra för webbens arkitektur, framväxt och utveckling samt betydelse/påverkan för dagens samhälle,
+    \item leda och genomföra projekt inom webbprogrammering inkluderat kravställning, mjukvaruutveckling samt kontinuerlig leverans till driftsmiljö.
+\end{itemize}
+
+\section*{Innehåll och struktur}
+
+\subsection*{Programöversikt}
+
+Programmet har en programansvarig som tillser att utbildningen håller god kvalitet med
+god progression samt tillser att kommunikationen mellan lärare och studenter fungerar
+på ett bra sätt. Kvalitet och progression upprätthålls genom kontinuerlig dialog med
+ämnesansvarig.
+
+Årskurs ett i programmet fokuserar på att ge studenten en grundläggande kunskap om
+klient­ och serverbaserade webbprogrammeringsmiljöer samt en grund i prototyp­- och
+klassbaserad objektorienterad programmering. Vidare introduceras och tillämpas för
+området relevanta programutvecklingsprocesser. Årskursen avslutas med en
+sammanfattande projektkurs.
+
+Årskurs två syftar till att ge studenten fördjupad kunskap om webbapplikationers
+arkitektur och för webbappliaktioner relevanta programmeringsmönster samt kunskap
+om och färdighet i objektorienterad analys och design. Testning av mjukvara och dess
+kvalitet sätts i fokus tillsammans med förståelse för webben som en applikationsplattform. Under programmets sista termin genomförs ett kundorienterat
+mjukvaruutvecklingsprojekt där en större webbapplikation skapas och driftsätts.
+Årskursen avslutas med ett självständigt arbete.
+
+\subsubsection*{Kurser i programmet}
+
+Kurserna i programmet kan i samförstånd med programansvarig bytas ut mot
+motsvarande kurser inom programmets inriktning. Vid utbyte av kurs kontrollerar
+programansvarig att programmets mål fortfarande uppfylls. Förkunskapskraven för
+kurser samt de lokala reglerna för examen vid Linnéuniversitetet måste alltid uppfyllas.
+
+\paragraph*{Årskurs 1}
+
+\begin{itemize}
+    \item Grundläggande programmering 7,5 hp, Datavetenskap, G1N\fn:mainfiled{}. (Konstruktion av välstrukturerade program i Javascript. Prototypbaserad objektorienterad programmering.)
+    \item Webbteknik 1 7,5 hp, Medieteknik, G1N. (Grundläggande webbdesign med klientbaserad teknik.)
+    \item Grafiska verktyg 7,5 hp, Medieteknik, G1N. (Grundtekniker för skapande av vektorbaserad grafik, bitmapbaserad grafik samt 3D­grafik.)
+    \item Klientbaserad webbprogrammering 7,5, G1F\fn:mainfiled{}. (Konstruktion av webbläsarbaserade applikationer med bland annat Javascript.)
+    \item Serverbaserad webbprogrammering 7,5 hp, Datavetenskap, G1F\fn:mainfiled{}. (Konstruktion av webbserverbaserade applikationer samt förståelse för olika typer av webbservrar och dess kommunikation med webbklienten.)
+    \item Programvaruteknik 7,5 hp, Datavetenskap, G1F\fn:mainfiled{}. (Introduktion i programvaruutveckling. Kursen fokuserarpå verktyg som kan användas under utveckling av programvara som stöd för bland annat modellering, konfigurationshantering och testning.)
+    \item Objektorienterad programmering 7,5 hp, Datavetenskap, G1F\fn:mainfiled{}. (Klassbaserad objektorienterad programmering med C\#.)
+    \item Individuellt mjukvaruutvecklingsprojekt 7,5 hp, Datavetenskap, G1F\fn:mainfiled{}. (Genomförande av ett mjukvaruprojekt där en fungerande mjukvara skall utvecklas med hjälp av de teoretiska och praktiska förutsättningar som getts i tidigare kurser.)
+\end{itemize}
+
+\paragraph*{Årskurs 2}
+
+\begin{itemize}
+    \item Objektorienterad analys och design med UML 7,5 hp, Datavetenskap, G1F\fn:mainfiled{}. (Kunskaper om hur objektorienterad analys och design kan implementeras i ett objektorienterat programmeringsspråk samt grunderna i modelleringsspråket UML.)
+    \item Introduktion till mjukvarukvalitet 7,5 hp, Datavetenskap, G1F\fn:mainfiled{}. (Framställning av webbaserad mjukvara med hög kodkvalitet.)
+    \item Mjukvarutestning 7,5 hp, Datavetenskap, G1F\fn:mainfiled{}. (Enhets­, system­ och integrationstestning, acceptanstestning.)
+    \item Databasteori 7,5 hp, Datavetenskap, G1F\fn:mainfiled{}. (Metoder och teorier för databasdesign. Frågespråk, dokument­ och relationsdatabaser.)
+    \item Arkitekturer och ramverk för webbapplikationer 7,5 hp, Datavetenskap, G1F\fn:mainfiled{}. (Förståelse för hur webbramverk och designmönster kan användas i samband med utveckling av webbapplikationer.)
+    \item Webben som applikationsplattform 7,5 hp, Datavetenskap, G1F\fn:mainfiled{}. (Webbens arkitektur, framväxt och utveckling samt betydelse/påverkan för dagens samhälle.)
+    \item Mjukvaruutvecklingsprojekt 7,5 hp, Datavetenskap, G1F\fn:mainfiled{}. (Genomförande av ett kundorienterat mjukvaruprojekt med ett fokus på projektledning och projektplanering.)
+    \item Självständigt arbete 7,5 hp, Datavetenskap, G1E\fn:mainfiled{}. (Självständigt arbete omfattande teoretisk och experimentell verksamhet med åtföljande rapportskrivning och muntlig presentation.)
+\end{itemize}
+
+\subsubsection*{Arbetslivsanknytning}
+
+Inom ramen för utbildningen har studenterna möjlighet att bedriva projekt tillsammans
+med företag. Kurserna i utbildningen är i många fall utformade för att passa en framtida
+anställning och stora delar av programmets innehåll är framtaget med feedback från
+företag inom IT­sektorn.
+
+\subsubsection*{Utlandsstudier}
+
+Studenterna erbjuds ta del av det samlade utbudet av avtal med utländska lärosäten som
+finns inom Linnéuniversitetet. Utlandsstudier sker i samråd med programansvarig och
+under årskurs två.
+
+\subsubsection*{Perspektiv i utbildningen}
+
+Inom utbildningen arbetar man med hållbar utveckling genom att tillse att studenterna får
+kunskaper som kommer att vara relevanta och applicerbara under en längre tidsperiod.
+Hållbar utveckling syftar här på människan och dennes behov och hur man genom
+tekniken kan tillse att dessa även i framtiden kan tillgodoses.
+
+Internationaliseringsperspektivet inom utbildningen tillgodoses främst genom att ge
+möjlighet för samverkan med universitet utomlands men även genom att hämta
+inspiration och dra lärdomar av hur universitet internationellt bedriver undervisning och
+forskning inom området.
+
+\section*{Kvalitetsutveckling}
+
+Kontinuerlig utvärdering och förbättring av programmet sker bland annat i samråd med
+studenter i form av en programkommité, genom läsårsutvärderingar samt genom
+samverkan med företag och andra intressenter samt genom benchmarking gentemot
+andra högskolor och universitet.
+
+Sammanställningar av programutvärderingar finns tillgängliga på programmets
+webbplats.
+
+Programansvarig ansvarar för att utvärderingen genomförs och att eventuella
+kvalitetsproblem i programmet åtgärdas.
+
+\section*{Examen}
+
+Efter avklarade studier på programmet samt då avklarade studier motsvarar de
+fordringar som finns angivna i Högskoleförordningens examensordning samt i den lokala
+examensordningen för Linnéuniversitetet kan studenten ansöka om examen. De som
+fullföljt programmet Webbprogrammerare 120 hp kan erhålla följande examen:
+
+Högskoleexamen med inriktning mot webbprogrammering\\
+Huvudområde: Datavetenskap
+
+\textit{Higher Education Certificate in web development\\
+Main field of study: Computer Science.}
+
+Examensbeviset är tvåspråkigt (svenska/engelska). Tillsammans med examensbeviset
+följer Diploma Supplement (engelska).
+
+\section*{Övrigt}
+
+Undervisningen bedrivs huvudsakligen på svenska, men inslag av engelska är
+återkommande i form av till exempel engelskspråkig litteratur och lärresurser.
+
+Campusstudier förutsätter egen tillgång till bärbar dator.
+
+För att läsa utbildningen på distans så förutsätts egen tillgång till dator, headset,
+webbkamera och internetuppkoppling.
+
+Majoriteten av utbildningens lärresurser är publikt tillgängliga genom kursernas
+webbplatser.
+
 \end{document}
