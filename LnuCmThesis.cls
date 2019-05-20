@@ -415,6 +415,13 @@
   skipbelow=0cm
 ]{borderleft}
 
+% \DeclareDocumentEnvironment{documentproperties}{}{%
+%   \normalfont
+% }{}
+
+\newcommand{\documentproperties}{}
+
+
 \renewcommand{\maketitle}{\begin{titlepage}
     %\newpage
     \null
@@ -449,13 +456,14 @@
     \begin{textblock*}{7.94cm}[0,1](12.62cm,29cm)
       \begin{borderleft}
         \normalfont
-        \emph{\authorlabel:} \@author\\
-        \emph{\supervisorlabel:} \supervisorname\\
-        \emph{\examinerlabel:} \examinername\\
-        \emph{\semesterlabel:} \semestername\\
-        \emph{\subjectlabel:} \subjectname\\
-        \emph{\levellabel:} \levelname\\
-        \emph{\coursecodelabel:} \coursecodename, \creditsname\ \creditslabel
+        \documentproperties
+        % \emph{\authorlabel:} \@author\\
+        % \emph{\supervisorlabel:} \supervisorname\\
+        % \emph{\examinerlabel:} \examinername
+        % \emph{\semesterlabel:} \semestername\\
+        % \emph{\subjectlabel:} \subjectname\\
+        % \emph{\levellabel:} \levelname\\
+        % \emph{\coursecodelabel:} \coursecodename, \creditsname\ \creditslabel
       \end{borderleft}
     \end{textblock*}
 
